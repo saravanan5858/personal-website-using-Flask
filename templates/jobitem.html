@@ -1,0 +1,11 @@
+<div class="mb-3 mt-3 py-2 border-bottom">
+        <h4><b> {{exp['title']}} </b></h4>
+        <div class="mb-2"><h5> {{exp['company']}} </h5></div>
+        <div class="mb-2 text-primary"><i>{{exp['start_date']}} - {{exp['end_date']}} <span style="display: inline-block; margin-left: 400px;">{{exp['location']}}</span></i></div>
+        <div class="mb-2 text-primary"><i>Achievements/Tasks</i></div>
+        {% for desc in exp['description'] %}        
+                <div>
+                    <ul><li>{{desc}}</li></ul>                    
+                </div>        
+        {% endfor %}
+</div>
